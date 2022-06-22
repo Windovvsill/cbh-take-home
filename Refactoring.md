@@ -16,8 +16,8 @@ The readability of the function is severely limited, and the code is prone to bu
 3. use of mutation,
 4. and nested if statements.
 
-The first step to refactor this function was to combine and rearange the predicates to remove nested ifs, and use the early exit pattern for the trivial case.
+The first step to refactor this function was to combine and rearrange the predicates to remove nested ifs, and use the early exit pattern for the trivial case.
 
-Then it's simple to extract each responsibility into its own function. This removes the repeated statements, divides each piece of business logic so it can be reasoned about individually, and removes the if statements from the orchastration function. It also gives an opportunity to add a lot of context to each function by naming it (and adding docs).
+Then it's simple to extract each responsibility into its own function. This removes the repeated statements, divides each piece of business logic so it can be reasoned about individually, and removes the if statements from the orchestration function. It also gives an opportunity to add a lot of context to each function by naming it (and adding docs).
 
 For me, a function like this is best expressed by a pipe, where you can read in plain english what the steps of the pipeline are. Hopefully it would also make it easy for the theoretical future developers to add new pieces of business logic, or side effects, by lengthening the pipeline.

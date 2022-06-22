@@ -38,7 +38,7 @@ The facility client dashboard will need:
 2. A tooltip on the input that reads "add a custom id to this agent which will be displayed on Reports.
 3. Add the customId field to the payload of the edit agent API call.
 4. Display the customId if one has already been set.
-5. Update the E2E tests for udpating agents to include the new field.
+5. Update the E2E tests for updating agents to include the new field.
 
 AC:
 1. The facility user can view any custom ids of an agents.
@@ -50,7 +50,7 @@ Effort:
 **Facility Backend -- new table for facility custom id -> agent mapping**
 
 Description:
-Becuase each facility will set their own custom ids on each agent, let's make a bridge table.
+Because each facility will set their own custom ids on each agent, let's make a bridge table.
 
 Implementation:
 

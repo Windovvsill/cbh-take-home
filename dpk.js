@@ -58,10 +58,10 @@ const ensureMaxLength = hash => candidate => {
  * 
  * The same key will be generated given the same input.
  * 
- * Stricly speaking, determinism is based on:
+ * Strictly speaking, determinism is based on:
  * 1. the start.partitionKey being truthy and being the same, or
  * 2. the string representation of start being the same, or
- * 3. start being falsey
+ * 3. start being falsey.
  * @param {{ partitionKey?: any }} start
  * @returns {string} 
  */
